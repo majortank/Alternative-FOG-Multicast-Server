@@ -22,3 +22,15 @@
    dnf update -y
    dnf install epel-release -y
    dnf install git wget net-tools -y
+   ```
+
+4. **Install FOG**:
+    ```bash
+    cd /root
+    git clone https://github.com/FOGProject/fogproject.git
+    cd fogproject/bin
+    ./installer.sh
+    Select "Normal Server" (option 1).
+    Use defaults and configure services.
+    Access FOG: Open http://<server_ip>/fog (default login: fog/password).
+    ```
